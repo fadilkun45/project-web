@@ -1,0 +1,165 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    font-family: 'PT Serif', serif;
+}
+
+nav {
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-between ;
+    padding: 10px ;
+    margin-bottom: 30px ;
+    background-color: #111112 ;
+    color: #fafafa ;
+}
+
+.nav_judul {
+    font-size : 30px ;
+}
+
+.container {
+    max-width: 900px; ;
+    display: flex ;
+    flex-direction: column ;
+    margin: auto ;
+    padding: 5px 10px ;
+}
+
+.upper_section {
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-between ;
+    text-align: left ;
+    font-weight: bold ;
+    border-bottom: 1px solid #111112 ;
+}
+
+.upper_section p:nth-child(1){
+    width: 20% ;
+}
+
+.upper_section p:nth-child(2) {
+    width: 70% ;
+}
+
+.upper_section p:nth-child(3){
+    width: 10%  ;
+}
+
+.upper_selection {
+    display: flex ; 
+    flex-direction: row ;
+    text-align: center ;
+    margin: auto;
+    width: 900px;
+}
+
+.upper_selection p {
+    width: 50% ;
+    border: 1px solid black ;
+    margin: 10px 0 ;
+}
+
+.selection_active {
+    color: #fff ;
+    background-color: #111112;
+}
+
+.sec {
+    width: 100% ;
+    display: flex ;
+    flex-direction: column ;
+}
+
+.sec.hidden {
+    display: none ;
+}
+
+.content {
+    display: none ;
+}
+
+.content_container {
+    display: flex ;
+    flex-direction: row ;
+    margin : 15px 0 ;
+    padding-bottom: 15px ;
+    border-bottom: 1px solid #111112 ;
+}
+
+.download {
+    width: 20% ;
+}
+
+.download a {
+    text-decoration: none ;
+    color: #fff ;
+    background-color: #111112 ;
+    padding: 8px ;
+    border-radius: 20px ;
+    font-size: 13px ;
+}
+
+.change {
+    width: 70% ;
+    font-size: 13px ;
+}
+
+.date {
+    width: 10% ;
+}
+
+.btn_loadmore {
+    display: flex ;
+    margin: 10px auto ;
+    justify-content: center ;
+    color: #fff ;
+    background-color: #111112 ;
+    width: 100% ;
+    border-radius: 20px ;
+    padding: 3px 0 ;
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 1100px ){
+    .container {
+        max-width: 600px ;
+    }
+
+    .upper_selection {
+        max-width: 600px ;
+    }
+}
+
+@media only screen and (max-width : 600px ){
+
+    .container {
+        max-width: 350px ;
+        overflow-y: hidden ;
+    }
+
+    nav {
+        justify-content: center ;
+    }
+
+    .nav_judul {
+        font-size: 20px ;
+    }
+
+    .upper_selection {
+        max-width:350px ;
+    }
+
+    .upper_section {
+        width: 600px ;
+    }
+
+    .sec {
+        width: 600px ;
+    }
+
+    
+
+  
+}
